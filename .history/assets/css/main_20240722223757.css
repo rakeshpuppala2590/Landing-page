@@ -7,13 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .featured-logo {
-    width: 72px; /* Larger size */
-    height: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Aligns the image with the text */
-    max-width: 100%; /* Ensure the image does not overflow its container */
-}
-
-.featured-logo1 {
     width: 150px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
