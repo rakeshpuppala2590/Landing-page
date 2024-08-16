@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <style>
+      /* Targeting all ion-icon elements within the .social-list and increasing their size */
+      .social-list ion-icon {
+        font-size: 40px; /* Adjust the size as needed */
+      }
+    </style>
+    <style>
+      .title {
+        display: inline-block; /* Make paragraphs inline */
+        width: 50%; /* Set width for each paragraph */
+      }
+    </style>
+
+    <style>
+      .name {
+        margin: 0; /* Remove any margin */
+        padding: 0; /* Remove any padding */
+      }
+    </style>
+
+    <style>
+      .underline {
+        text-decoration: underline; /* Apply underline to the text */
+      }
+
+      .yellow-text {
+        color: yellow; /* Apply yellow color to the text */
+      }
+    </style>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Picon.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Rakesh Puppala"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <!-- <h1 class="name" title="DJ"></h1>
+
+          <p class="title">a</p>
+          <p class="title">b</p>
+          <p class="title">c</p> -->
+
+            <h5 class="name" title="DJ">Rakesh<br />Puppala</h5>
+            <!-- <p class="name" title="DJ">Doddipatla</p> -->
+            <p class="title" style="margin-bottom: 10px">MS IN CS @CSUF</p>
+            <p class="title" style="margin-bottom: 10px">Ex-Infoscion</p>
+            <p class="title" style="margin-bottom: 10px">Software Developer</p>
+          </div>
+
+          <!-- <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/profile/my-avatar.webp" width="80" alt="Ulises Gómez Photo">
+          </figure>
+  
+          <div class="info-content">
+            <h1 class="name" title="Ulises Gómez">Ulises Gómez</h1>
+            <p class="title" style="margin-bottom: 10px;">Técnico Audiovisual <br> Frontend Developer </p>
+            <p class="title" style="margin-bottom: 5px;">CIO - Tecnología Urbana</p>
+            <p class="title" style="margin-bottom: 10px;">CEO - Stream Tech</p>
+  
+          </div> -->
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Contact & other Info</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:saijagannadh@csu.fullerton.edu"
+                  class="contact-link"
+                  >rakeshpuppala2591@csu.fullerton.edu</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+16577679544" class="contact-link"
+                  >+1 (657) 767-9546</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Linkedin</p>
+
+                <a
+                  href="https://www.linkedin.com/in/rakesh-puppala/"
+                  class="contact-link"
+                  target="_blank"
+                  >RakeshPuppala</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">github</p>
+                <a
+                  href="https://github.com/rakeshpuppala2590"
+                  class="contact-link"
+                  target="_blank"
+                  >Rakesh Puppala</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <a
+                  href="https://www.cityoffullerton.com/about-us/about-fullerton"
+                  class="contact-link"
+                  target="_blank"
+                  >Fullerton, CA, USA</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link" target="_blank">
+                <ion-icon name="logo-twitter" font-size: 64px></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <!--<li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>-->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a Software Developer With a blend of leadership in app
+              development and a knack for innovative solutions, I turn bold
+              ideas into reality. Explore the intersection of technology and
+              creativity through my work.
+            </p>
+
+            <p>
+              A life-long engineer with strong analytical and problem-solving
+              skills.
+            </p>
+
+            <!-- <p>
+            I am a PhD Candidate in Economics (hired as a <i>Pre-doc</i> PhD Researcher and working as a <i>Pre-doc</i> Lecturer) at 
+            <a href="https://www.ub.edu/school-economics/" target="_blank" class="about-text-link ">Universitat de Barcelona (UB)</a>.
+            I am affiliated to the <a href="https://ieb.ub.edu/" target="_blank" class="about-text-link ">Institut d'Economia de Barcelona (IEB)</a>.
+            I am currently on a 3-month visiting research stay at the <a href="https://ifs.org.uk/" target="_blank" class="about-text-link ">Institute for Fiscal Studies (IFS)</a> and at the <a href="https://www.ucl.ac.uk/economics/ucl-department-economics" target="_blank" class="about-text-link ">University College London (UCL)</a>.
+          </p>
+
+          <p>
+            I obtained my MSc in Economics from <a href="https://www.vwl.uni-mannheim.de/en/" target="_blank" class="about-text-link ">Universität Mannheim (UniMA)</a> in 2019 and my 
+            Bachelor's degree in Economics from <a href="https://www.uam.es/Economicas/Home.htm?language=en" target="_blank" class="about-text-link ">Universidad Autónoma de Madrid (UAM)</a> in 2016.
+          </p>
+
+          <p>
+            How do households and firms respond to government policies (<b>taxes</b>, <b>regulations</b> and <b>public-spending</b> policies)? I address this research question both from
+            <b>empirical</b> and <b>theoretical</b> perspective. Hence, I work with <b>micro-data & causal inference</b> methods, but also with <b>large-scale general equilibrium
+              macro models</b>.
+            
+          </p> -->
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/CSUF.png"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Masters Student</h4>
+
+                  <p class="service-item-text">
+                    Masters in Computer Science at California State University
+                    Fullerton.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/Headstarter.png"
+                    alt="Rakesh Puppala"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">SWE Fellow</h4>
+
+                  <p class="service-item-text">
+                    Software Engineering Fellow at Headstarter
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Additional Skills</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/Bugdetection.jpeg"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Bug Detection
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Bug Detections in websites like ecommerence, general apps,
+                      etc.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/Technology.jpeg"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Technology Exploration
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Reviewing Beta apps, Suggesting better features and
+                      updating to technology.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/Cinephile.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    cinephile
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Watching animes extensively contributes to boosting my
+                      self-confidence.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/Financial.jpeg"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Financial Knowledge
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Financial knowledge involves understanding various aspects
+                      of managing money, investments, and financial instruments
+                      such as stocks, mutual funds, bonds, and other assets. It
+                      encompasses learning about budgeting, saving, investing,
+                      and managing risks.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+       
+ -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Dj</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>DJ</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="contact-title">
+                <a
+                  href="https://drive.google.com/file/d/11XlYJWS84sAX1KKiM9z8l07WM_KWRfNk/view?usp=sharing"
+                  target="_blank"
+                >
+                  <img src="./assets/images/downloadresume.png"
+                /></a>
+              </h3>
+            </div>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Master's in Computer Science at California State University
+                  Fullerton
+                </h4>
+
+                <span>GPA: 3.8/4.0</span>
+                <span>Jan 2023 — Dec 2024</span>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  BTech in Information Technology at SRKR Engineering College
+                </h4>
+
+                <span>GPA: 8.07/10.0</span>
+                <span>August 2016 — Sept 2020</span>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Relevant Coursework</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <p class="timeline-text">
+                  Artificial Intelligence, Advanced Database Management,
+                  Software Design and Development, Advanced Database Management,
+                  Advanced Computer Networks, Web backend engineering, Advanced
+                  Blockchain
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineering Fellow - Headstarter
+                </h4>
+
+                <span>Jul 2024 — Present</span>
+                <span></span>
+
+                <p class="timeline-text">
+                  • Developed a pantry tracker application with ReactJS, NextJS,
+                  Firebase, OpenAI API, GPT Vision API, and MaterialUI.<br />
+                  • Implemented AI-powered customized customer support solutions
+                  using OpenAI, NextJS, AWS, and RAG.<br />
+                  • Created AI-driven flashcards with Stripe integration,
+                  utilizing OpenAI and StripeAPI.<br />
+                  • Developed an AI professor rating platform with RAG, OpenAI,
+                  and vector databases.<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Full Stack Developer - Infosys
+                </h4>
+
+                <span>Jul 2022 — Nov 2022</span>
+                <span>Hyderabad, IN</span>
+
+                <p class="timeline-text">
+                  • Designed and implemented reusable UI components using
+                  React.js and TypeScript, streamlining the development process
+                  and improving codebase maintainability, resulting in a 20%
+                  reduction in development time.<br />
+                  •Designed and implemented RESTful APIs with ExpressJS for
+                  seamless communication between frontend and backend systems.
+                  <br />
+                  • Applied Agile methodologies, managed daily stand-ups, sprint
+                  planning, and retrospectives using JIRA, reducing project
+                  timelines by 15% and boosting productivity by 10%.
+                  <br />
+                  • Optimized MongoDB queries and integrated AWS services for
+                  scalable backend solutions, significantly improving team
+                  cohesion and project delivery success.<br />
+                  • Standardized data persistence and session management by
+                  integrating Redux alongside localStorage, ensuring smoother
+                  user experience and reducing session errors by 30%.<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SAP Business Analyst - Infosys
+                </h4>
+
+                <span>Nov 2020 — Jun 2022</span>
+                <span>Hyderabad, IN</span>
+
+                <p class="timeline-text">
+                  • Worked on requirement gathering, blueprinting sessions, and
+                  solution design for AS-IS & TO-BE setups in SD and MM business
+                  processes.<br />
+                  • Implemented critical project deliverables within ServiceNow
+                  to facilitate a seamless production launch and provided
+                  post-go-live support for uninterrupted operations.<br />
+                  • Configured end-to-end SD setups, including enterprise
+                  structure maintenance, document type controls, item category
+                  determination, shipping point determination, output
+                  determination, plant determination, route determination, copy
+                  controls, batch job setups, and IDOC processing.<br />
+                  • Created comprehensive functional documentation for the
+                  entire project lifecycle and collaborated closely with clients
+                  to ensure accurate documentation of existing project
+                  configurations.<br />
+
+                  <br />
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Technical Skills</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Languages & Tools</h4>
+
+                <p class="timeline-text">
+                  Java, JavaScript, C++, Git, JIRA, SAP (ABAP, SD, MM)
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Databases & Cloud</h4>
+
+                <p class="timeline-text">
+                  MongoDB, MySQL, AWS, Firebase, Google Cloud Platform (GCP)<br />
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Development</h4>
+
+                <p class="timeline-text">
+                  React.js, React Native, NodeJS, ExpressJS, Material UI,
+                  Next.js
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">AI & Machine Learning</h4>
+
+                <p class="timeline-text">
+                  OpenAI, AWS Bedrock, HuggingFace, RAG, Pinecone
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Methodologies</h4>
+
+                <p class="timeline-text">Agile, Scrum, Kanban, Scrumban</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Certifications</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  AWS Certified Developer Associate
+                </h4>
+              </li>
+            </ol>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Infosys Certified Software Developer
+                </h4>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Data Analysis</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Data Analysis</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/Calmify"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/calm.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        NextJS, AWS KRecognition, OpenAI, MaterialUI, Stripe
+                        API, Clerk, Firebase
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">Calmify</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/AI-Customer-Support"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/AI_chatbot.png"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        NextJs, TypeScript, AWS Bedrock, RAG, OpenAI,
+                        HuggingFace, Pinecone
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">AI Customer Support</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <!--NO 3-->
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/Pantry_Tracker"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/pantry.png"
+                      alt="finance"
+                      loading="lazy"
+                      class="portfolio-image"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        NextJS, Firebase, GPT Vision API, React-Camera
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">Pantry Tracker</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/TSP"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/TSP.png"
+                      alt="orizon"
+                      loading="lazy"
+                      class="portfolio-image"
+                      width="60"
+                      height="60"
+                      style="height: 150px; width: 300px"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">StreamLit, Python, folium</p>
+                    </div>
+                    <h3 class="h3 blog-item-title">Travelling Sales Person</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analysis"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/Anomoly-Detector"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/anomaly.png"
+                      alt="summary"
+                      loading="lazy"
+                      class="portfolio-image"
+                      width="60"
+                      height="60"
+                      style="height: 150px; width: 300px"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        Python, Keras, Docker, OpenCV, Streamlit, TensorFlow,
+                        Deep Learning, 3D CNN
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">Anomaly Detector</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="data analysis"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/crime_rate_analysis"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Crime.jpeg"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        PySpark, Spark Streaming, Google Dataproc, Google
+                        Bucket, Machine Learning
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">Crime Rate Analysis</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/Algorithm-Efficiency-Analyzer-Tool"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/sort_alog.jpeg"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Tkinter, Python</p>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Sorting Algorithm Visualizer
+                    </h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/City-Navigation-and-Emergency-Route-Planning-Tool"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/city_nav.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        Leaflet.js, React.js, OpenStreetMap
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">City Navigation tool</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/FastAPI-Cloud-Service-Management"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Crime.jpeg"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Python, FastAPI, SQLAlchemy</p>
+                    </div>
+                    <h3 class="h3 blog-item-title">Cloud Service Management</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/rakeshpuppala2590/SEO_Keyword_Analyzer"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/SEO.jpg"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">
+                        React, Python, Flask, DataScraper
+                      </p>
+                    </div>
+                    <h3 class="h3 blog-item-title">SEO Keywork Analyzer</h3>
+                    <p class="blog-text"></p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
