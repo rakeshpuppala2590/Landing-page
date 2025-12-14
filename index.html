@@ -70,62 +70,7 @@
       rel="stylesheet"
     />
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("fbiB2Cc6kWReUkZ1n");
-      })();
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector(".form");
-        const button = document.querySelector(".form-btn");
-        const statusMessage = document.createElement("p");
-
-        form.addEventListener("submit", async function (e) {
-          e.preventDefault();
-          button.disabled = true;
-          button.innerText = "Sending...";
-
-          const formData = new FormData(form);
-          const formDetails = {
-            user_name: formData.get("fullname"),
-            user_email: formData.get("email"),
-            message: formData.get("message"),
-          };
-
-          try {
-            const response = await emailjs.send(
-              "service_59u46b5",
-              "template_kanv6nr",
-              formDetails
-            );
-            button.innerText = "Send";
-            form.reset();
-            statusMessage.className = "status-message success";
-            statusMessage.innerText = "Message sent successfully";
-          } catch (error) {
-            console.error("Error sending email:", error);
-            button.innerText = "Send";
-            statusMessage.className = "status-message error";
-            statusMessage.innerText =
-              "Something went wrong, please try again later.";
-          }
-
-          form.appendChild(statusMessage);
-          button.disabled = false;
-        });
-
-        button.addEventListener("mouseenter", function (e) {
-          button.style.backgroundColor = "#000";
-          button.style.color = "#fff";
-        });
-
-        button.addEventListener("mouseleave", function (e) {
-          button.style.backgroundColor = "#fff";
-          button.style.color = "#000";
-        });
-      });
-    </script>
+    
   </head>
 
   <body>
